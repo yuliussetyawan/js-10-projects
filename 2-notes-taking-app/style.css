@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right bottom, #b40eca, #ce7d03);
+}
+main {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+#add-btn {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  color: azure;
+  background-color: #179712;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#add-btn:hover {
+  background-color: #06a086;
+}
+.note {
+  background-color: #393e46;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+.note:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.tool {
+  background-color: #222831;
+  color: white;
+  padding: 0.2rem;
+  display: flex;
+  justify-content:flex-end;
+}
+.tool i {
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.tool i:hover {
+  color: #aca1a1;
+}
+.note textarea{
+  width: 18.75rem;
+  resize: none;
+  min-height: 14rem;
+  border:none;
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem;
+}
+.note textarea:focus{
+  outline: none;
+}

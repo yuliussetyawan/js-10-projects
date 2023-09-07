@@ -42,10 +42,9 @@ function loadNotes() {
     lsNotes.forEach((noteText) => {
       addNote();
       const notes = document.querySelectorAll(".note textarea");
-      console.log('notes', notes);
+      // lastNote is for maintain a record of all notes in the application without overwriting them.
       const lastNote = notes[notes.length - 1];
       lastNote.value = noteText;
-      console.log(lastNote.value);
     });
   } else {
     addNote();
